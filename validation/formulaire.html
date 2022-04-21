@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8" />
+	<title>Inscription</title>
+	<link rel="stylesheet" type="text/css" href="css/formulaire.css" />
+	<script src="script/script.js"></script>
+</head>
+
+<!-- utilisation des attributs des input pour une validation de base -->
+<!-- https://www.w3schools.com/html/html_form_attributes.asp -->
+
+<body>
+	<h1>Formulaire d'inscription</h1>
+	<form name="inscription" id="inscription" action="formulaire.html">
+			<div class="champ">
+				<label for="prenom">Prénom *</label>
+				<input type="text" name="prenom" id="prenom" required/>		
+			</div>
+
+			<div class="champ">
+				<label >Nom *</label>
+				<input type="text" name="nom" id="nom"  required /> 
+			</div>
+
+			<div class="champ">
+				<label for="naissance">Date de naissance</label>
+				<input  type="date" name="naissance" id="naissance"/> 
+			</div>
+
+			<div class="champ">
+				<label for="ville">Ville</label>
+				<select name="ville" id="ville">
+				<option value="StGeorges">St-Georges</option>
+				<option value="Beauceville">Beauceville</option>
+				<option value="StMartin">St-Martin</option>
+				<option value="StJoseph">St-Joseph</option>
+				<option value="StProsper">St-Prosper</option>
+				</select>
+			</div>
+
+			<div class="champ">
+				<label for="email" >Courriel *</label>
+				<input required type="email" name="email"  id="email" /> 
+			</div>
+
+			<div class="champ">
+				<label for="mot">Mot</label>
+				<input  type="text" name="mot" id="mot" maxlength="12"/> 
+			</div>
+
+			<div class="champ">
+				<label for="nombre">Nombre</label>
+				<input  type="number" name="nombre" id="nombre" min="8" max="16" /> 
+			</div>
+
+			<div class="champ">
+				<label>Cochez les fruits que vous aimez</label>
+				<input type="checkbox" name="choix1" id="choix1" value="pomme"/><label for="choix1">pomme</label>
+
+				<input type="checkbox" name="choix2" id="choix2" value="raisin"/><label for="choix2">raisin</label>
+
+				<input type="checkbox" name="choix3" id="choix3" value="fraise"/><label for="choix3">fraise</label>
+
+				<input type="checkbox" name="choix4" id="choix4" value="orange"/><label for="choix4">orange</label>
+			</div>
+
+			<div class="champ">
+				<label>Vos choix:</label>
+				<textarea name="resume" id="resume" rows="10"></textarea>
+			</div>
+			
+			<div class="centre">
+				<input type="submit" id="envoyer" value="Envoyer" />
+			</div>
+	</form>
+	
+</body>
+</html>

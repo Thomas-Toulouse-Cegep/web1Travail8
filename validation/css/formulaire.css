@@ -1,0 +1,72 @@
+* {
+	box-sizing:border-box;
+}
+input[type=text]:invalid, input[type=email]:invalid, select:invalid {
+	background-color: #fee;
+}
+body
+{
+	font-size:100%;
+	max-width:1000px;
+	margin:auto;
+}
+ h1
+{
+	text-align:center;
+}
+form {
+	margin: 20px;
+}
+.champ{
+	margin-bottom: 10px;	
+}
+.champ label:first-of-type {
+	float:left;
+	width: 25%;
+	padding: 5px 0px;
+}
+input[type=text], input[type=date], input[type=email], select {
+	width:75%; 
+	padding: 5px 0px;
+	outline:none;
+}
+input[type="submit"],  input[type="reset"]{
+	width:150px;
+	padding:10px 10px;
+	margin:20px 20px;
+	background-color: lightgray;
+}
+textarea{
+	width:75%;
+}
+.centre {
+	text-align: center;
+}
+
+/*classes à utiliser pour la présentation des champs en erreur ou non*/
+.erreur
+{
+	border: solid 2px red;
+}
+.valide {
+	border: solid 1px black;
+}
+
+
+/*et pour les cases à cocher choisies*/
+.choisi
+{
+	color:red;
+}
+.nonChoisi {
+	color:black;
+}
+
+
+
+/* pour la page 2 */
+#message {
+	display:none;
+	color:red;
+	padding: 5px;
+}
